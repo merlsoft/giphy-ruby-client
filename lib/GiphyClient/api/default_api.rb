@@ -474,9 +474,9 @@ module GiphyClient
         fail ArgumentError, 'invalid value for "opts[:"limit"]" when calling DefaultApi.gifs_search_get, must be greater than or equal to 1.'
       end
 
-      if !opts[:'offset'].nil? && opts[:'offset'] > 100
-        fail ArgumentError, 'invalid value for "opts[:"offset"]" when calling DefaultApi.gifs_search_get, must be smaller than or equal to 100.'
-      end
+      # if !opts[:'offset'].nil? && opts[:'offset'] > 100
+      #   fail ArgumentError, 'invalid value for "opts[:"offset"]" when calling DefaultApi.gifs_search_get, must be smaller than or equal to 100.'
+      # end
 
       if !opts[:'offset'].nil? && opts[:'offset'] < 0
         fail ArgumentError, 'invalid value for "opts[:"offset"]" when calling DefaultApi.gifs_search_get, must be greater than or equal to 0.'
